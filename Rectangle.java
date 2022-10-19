@@ -16,14 +16,14 @@ public class Rectangle
     
     public static void rectEquations()
     {
-	    System.out.println("The formula for area is: L * W");
-	    System.out.println("The formula for perimeter is: 2(L + W)");
+        System.out.println("The formula for area is: L * W");
+        System.out.println("The formula for perimeter is: 2(L + W)");
     }
 
     
     public String toString()
     {
-        return "Rectangle: " + width + " x " + length;
+        return "Rectangle: " + area();
     }
 
 }
