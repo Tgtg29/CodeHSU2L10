@@ -39,5 +39,29 @@ public class MathDemo{
         double area = radiusSq * PI;
         //print
         System.out.println("The area of a circle with a radius of "+ radius + " is: " + area);
+        
+        //random numbers
+        double firstRand = Math.random();
+        double secondRand = (int) (firstRand * 10); //this gives me between 0 and 9
+        //how about between 0 and 99
+        secondRand = (int) (firstRand * 100);
+        
+        //how about between 0 and 7
+        secondRand = (int) (firstRand * 8);
+        
+        //template for getting a random number from 0 to n
+        // int randInt = (int) (Math.random() * (n + 1));
+        
+        //get a randum between 1 and 6
+        int randDie = (int) (Math.random() * 6 + 1);
+        //long version: int randDie = (int) (Math.random() * (6-1 + 1) + 1);
+        
+        //template for getting a random number from m to n
+        //int randInt = (int) (Math.random() * (n - m + 1) + m);
+        //int randInt = (int) (Math.random() * (range + 1) + start);
+        
+        System.out.println("firstRand: " + firstRand);
+        System.out.println("secondRand: " + secondRand);
+        System.out.println("randDie: " + randDie);
     }
 }
